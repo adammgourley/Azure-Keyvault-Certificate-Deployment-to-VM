@@ -1,0 +1,32 @@
+{
+    "secretsManagementSettings": {
+        "pollingIntervalInS": "3600",
+        "linkOnRenewal": true,
+        "observedCertificates": [
+            {
+                "url": "https://<key vault name>.vault.azure.net/secrets/<certificate name>",
+                "certificateStoreName": "MY",
+                "certificateStoreLocation": "LocalMachine",
+                "keyExportable": false,
+                "accounts": [
+                    "Network Service",
+                    "Local Service"
+                ]
+            },
+            {
+                "url": "https://<key vault name>.vault.azure.net/secrets/<another certificate name>",
+                "certificateStoreName": "MY",
+                "certificateStoreLocation": "LocalMachine",
+                "keyExportable": false,
+                "accounts": [
+                    "Network Service",
+                    "Local Service"
+                ]
+            }
+        ]
+    },
+    "authenticationSettings": {
+        "msiEndpoint":  "<Required when the msiClientId property is used. Specifies the MSI endpoint. Example for most Azure VMs: http://169.254.169.254/metadata/identity/oauth2/token",
+        "msiClientId":  "<Required when the VM has any user assigned identities. Specifies the MSI identity. Example:  c7373ae5-91c2-4165-8ab6-7381d6e75619"
+    }
+}

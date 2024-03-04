@@ -1,15 +1,13 @@
 # Azure Keyvault Certificate Deployment to VM
 Deploy certificates stored in the Azure KeyVault to an Azure Virtual Machine using the KeyVault for Windows (or Linux) extension.
 
-#### Contents
-- README.md
-- scripts/Set-AzCertificateExtension.ps1
-- scripts/config/config-for-system-managed.json
-- scripts/config/config-for-user-assigned.json
+<br>
 
 ### Prerequisite Requirements
 1. Virtual Machine must have system-managed identity (or user-managed, although system is recommended) enabled.
 2. The identity must have *Key Vault Certificate User* privileges to the Key Vault that stores the certificate(s) you'd like to deploy.
+
+<br>
 
 ### How to Deploy the Certificate
 1. Connect to an Azure cloud shell (PowerShell).
@@ -36,6 +34,8 @@ $Config_File = ".\scripts\config\config-for-system-managed.json"    # Change bas
     -Location $VM_Location `
     -ResourceGroupName $VM_ResourceGroupName
 ```
+
+<br>
 
 ### How to Uninstall the Extension
 1. Connect to an Azure cloud shell (PowerShell)

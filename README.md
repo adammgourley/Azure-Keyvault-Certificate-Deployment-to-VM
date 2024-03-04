@@ -59,4 +59,4 @@ If you receive any errors in the Azure cloud shell, they are likely due to a per
 If you installed the extension without any errors, but the certificate is still not showing as installed, review the log files at the following location on the target VM.
 - C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.KeyVault.KeyVaultForWindows
 
-For configuration file issues or questions, you can reference the [Microsoft Documentation](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-windows?tabs=version3) for 
+For configuration file issues or questions, you can reference the [Microsoft Documentation](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-windows?tabs=version3).

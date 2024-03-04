@@ -27,7 +27,6 @@ $Config_File = ".\scripts\config\config-for-system-managed.json"    # Change bas
 ```
 5. Run the script.
 ``` powershell
-# Execute the function
 .\scripts\Set-AzVmCertificateExtension `
     -ConfigFile $Config_File `
     -VMName $VM_Name `

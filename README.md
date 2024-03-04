@@ -13,7 +13,7 @@ Deploy certificates stored in the Azure KeyVault to an Azure Virtual Machine usi
 1. Connect to an Azure cloud shell (PowerShell).
 2. Clone this repository.
 ``` powershell
-git clone https://github.com/adammgourley/Azure-Keyvault-Certificate-Deployment-to-VM.git
+git clone "https://github.com/adammgourley/Azure-Keyvault-Certificate-Deployment-to-VM.git"
 ```
 3. Edit the config file in ./scripts/config/ that you'll be using. Can use the [Microsoft Documentation](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-windows?tabs=version3) for reference.
 4. Change directory and set your variables.

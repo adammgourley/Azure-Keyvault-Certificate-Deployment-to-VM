@@ -4,7 +4,7 @@ Deploy certificates stored in the Azure KeyVault to an Azure Virtual Machine usi
 <br>
 
 ### Prerequisite Requirements
-1. Virtual Machine must have system-managed identity (or user-managed, although system is recommended) enabled.
+1. Virtual Machine must have a *system-managed identity* (or *user-assigned*, although system is recommended) enabled.
 2. The identity must have *Key Vault Certificate User* privileges to the Key Vault that stores the certificate(s) you'd like to deploy.
 
 <br>
